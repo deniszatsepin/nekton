@@ -1,0 +1,58 @@
+<section class="panel course-info">
+  <header>
+    <div class="thumb" {{bindAttr style="mainTumb"}}>
+
+    </div>
+    <h2>{{title}}</h2>
+    <p>
+      {{description}}
+    </p>
+  </header>
+</section>
+
+<div class="row-fluid">
+  <div class="span8">
+    <section class="panel course-progress">
+      <div class="content-body">
+        {{view App.CourseProgress}}
+      </div>
+    </section>
+    <section class="panel curriculum">
+      <header>
+        Curriculum
+      </header>
+      <div class="content-body">
+        {{#each sections}}
+          {{view App.SectionAnonsView contentBinding="this"}}
+        {{/each}}
+      </div>
+    </section>
+  </div>
+  <div class="span4">
+    <section class="panel ratecourse">
+      <header>
+        <span>Rate this course</span>
+        <span class="course-rating-control">
+          {{view App.RaterView ratingBinding=myRating}}
+        </span>
+      </header>
+    </section>
+    <section class="panel announcements">
+      <header>Announcements</header>
+      <div class="announcements-buttons">
+        <ul class="unstyled">
+          {{#each announcements itemController="announcement"}}
+            {{view App.AnnouncementInCourseView}}
+          {{else}}
+            <li>
+              It's no one announcement for this course.
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    </section>
+    {{view App.QuestionsCourseView}}
+  </div>
+</div>
+
+

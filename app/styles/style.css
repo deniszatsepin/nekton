@@ -1,0 +1,251 @@
+/* Put your CSS here */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #eee;
+}
+
+section.panel {
+    background-color: #fafafa;
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+    box-shadow: 1px 2px 2px #aaa;
+    margin-bottom: 20px;
+}
+
+section.panel > header {
+    color: #555;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #c9c9c9;
+    margin: 0;
+    background: #e0e0e0;
+    background: -webkit-linear-gradient(#ffffff, #e0e0e0);
+    background: -o-linear-gradient(#ffffff, #e0e0e0);
+    background: -ms-linear-gradient(#ffffff, #e0e0e0);
+    background: linear-gradient(#ffffff, #e0e0e0);
+    border-radius: 4px 4px 0 0;
+}
+
+section.panel > .content-body {
+    border-radius: 0 0 4px 4px;
+    border-top: none;
+    padding: 10px 15px;
+}
+
+section.course-info > header .thumb {
+    float: left;
+    width: 110px;
+    height: 60px;
+    border-radius: 3px;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #282828;
+    margin-right: 10px;
+}
+
+section.course-info > header h2 {
+    color: #5589b6;
+    font-size: 18px;
+    text-shadow: 0 1px #fff;
+    line-height: 1.2;
+    margin-top: 5px;
+}
+
+section.section {
+    margin-bottom: 10px;
+}
+
+section.section > header {
+    margin-bottom: 5px;
+}
+
+section.section .section-number {
+    width: 85px;
+    background: #8c9296;
+    background: -webkit-linear-gradient(#a5abaf, #8c9296);
+    background: -o-linear-gradient(#a5abaf, #8c9296);
+    background: -ms-linear-gradient(#a5abaf, #8c9296);
+    background: linear-gradient(#a5abaf, #8c9296);
+    color: #fff;
+    text-shadow: 0 -1px 1px #666666;
+    padding: 2px 0 2px 10px;
+    border-radius: 10px;
+    margin-top: 2px;
+}
+
+section.section .section-number > div {
+    border: 5px solid #8c9296;
+    border-radius: 20px;
+    background-color: #fff;
+    float: right;
+    width: 20px;
+    text-align: center;
+    margin: -5px -2px 0 0;
+    color: #8c9296;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+section.section .section-name {
+    padding: 4px 0 0 5px;
+    color: #53AD24;
+    font-weight: bold;
+}
+
+section.section .section-content {
+    padding-left: 30px;
+}
+
+section.lecture-anons {
+    margin-bottom: 3px;
+    padding: 4px 1px 0 2px;
+    font-size: 0.9em;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+section.lecture-anons:hover {
+    border-color: #ddd;
+    background-color: #fff;
+}
+
+section.lecture-anons .lecture-action {
+    display: none;
+}
+
+section.lecture-anons:hover .lecture-action {
+    display: block;
+}
+
+
+.question-input-panel {
+    padding: 10px 15px;
+}
+
+.question-input-panel .question-input {
+    width: 95%;
+}
+
+.course-rating-control .star {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    background: url("/images/star_gray_16.png") no-repeat center center;
+}
+
+.course-rating-control .star.active {
+    background-image: url("/images/star_gold_16.png");
+}
+
+.course-questions {
+    list-style: none;
+    margin: 0 -15px;
+    padding: 0;
+}
+
+.course-questions li {
+    margin: 0;
+    padding: 0;
+}
+
+.course-questions a {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.course-questions a:hover {
+    text-decoration: none;
+}
+
+.course-questions a section.answer {
+    text-decoration: none;
+    background: #f2f2f2;
+    background: -webkit-linear-gradient(#ffffff,#f2f2f2);
+    background: -o-linear-gradient(#ffffff,#f2f2f2);
+    background: -ms-linear-gradient(#ffffff,#f2f2f2);
+    background: linear-gradient(#ffffff,#f2f2f2);
+    padding: 10px 40px 10px 10px;
+    border-top: 1px solid #c5c5c5;
+}
+
+.course-questions a:hover section.answer {
+    text-decoration: none;
+    background: #758594;
+    background: -webkit-linear-gradient(#acb7c1,#758594);
+    background: -o-linear-gradient(#acb7c1,#758594);
+    background: -ms-linear-gradient(#acb7c1,#758594);
+    background: linear-gradient(#acb7c1,#758594);
+}
+
+.course-questions section.answer > header {
+    color: #353535;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+section.panel.questions > .content-body {
+    padding-bottom: 0;
+}
+
+.course-questions section.answer .author {
+    color: #555;
+    text-shadow: 0 1px #ddd;
+    font-size: 12px;
+}
+
+.course-questions a:hover section.answer .author {
+    color: #333;
+    text-shadow: 0 1px #999;
+}
+
+
+.announcements-buttons ul {
+    margin-bottom: 0;
+}
+.announcements-buttons ul li {
+    background: #f2f2f2;
+    background: -webkit-linear-gradient(#ffffff,#f2f2f2);
+    background: -o-linear-gradient(#ffffff,#f2f2f2);
+    background: -ms-linear-gradient(#ffffff,#f2f2f2);
+    background: linear-gradient(#ffffff,#f2f2f2);
+    border-top: 1px solid #c5c5c5;
+    color: #353535;
+    padding: 10px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.announcements-buttons .btn-announce .title {
+    float: left;
+    font-size: 13px;
+    margin-top: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 190px;
+    text-align: left;
+}
+
+.announcements-buttons .btn-announce .how-long {
+    color: #999;
+    float: right;
+    font-size: 11px;
+    margin-top: 6px;
+
+    width: 65px;
+}
+
+.ask-question-form textarea {
+    width: 95%;
+    height: 80px;
+}

@@ -1,0 +1,11 @@
+<section class="row-fluid lecture-anons">
+  <header class="span9">
+    <strong>{{title}}:{{number}}:{{section.title}}:{{section.course.id}}</strong><br/>
+    <span>Lecture {{view.lectureIndex}}: {{#linkTo "lectures.show" course this}}{{title}}{{/linkTo}}</span>
+
+    <span class="label label-info">{{contentType}}</span>
+  </header>
+  <div class="span3">
+    {{view  "view.buttonView"}}
+  </div>
+</section>
